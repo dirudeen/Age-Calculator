@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+
+  <body>
+    <main class="main__container">
+      <form action="#">
+        <div class="container">
+          <label for="date">Day</label>
+          <input type="text" name="date" id="date" placeholder="DD" />
+          <span class="validity date">Must be a valid date</span>
+        </div>
+        <div class="container">
+          <label for="month">Month</label>
+          <input type="text" name="month" id="month" placeholder="MM" />
+          <span class="validity month">Must be a valid month</span>
+        </div>
+        <div class="container">
+          <label for="year">Year</label>
+          <input type="text" name="year" id="year" placeholder="YYYY" />
+          <span class="validity year">Must be in the past</span>
+        </div>
+        <div class="container display-none"></div>
+      </form>
+      <div class="submit-container">
+        <span class="hr-line"></span>
+        <button type="submit">
+          <img src="assets/images/icon-arrow.svg" alt="icon-arrow" />
+        </button>
+      </div>
+      <div class="display-birthday">
+        <p><span class="cl-purple" data-years>- -</span>years</p>
+        <p><span class="cl-purple" data-months>- -</span>months</p>
+        <p><span class="cl-purple" data-days>- -</span>days</p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
